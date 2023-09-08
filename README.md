@@ -47,6 +47,9 @@ git add [dir]
 添加当前目录的所有文件到暂存区
 git add .
 
+删除工作区文件，并且将这次删除放入暂存区
+git rm [file1] [file2] ...
+
 ## 四、代码提交
 
 提交暂存区到仓库区
@@ -98,13 +101,42 @@ git branch -d [branch-name]
 
 ## 七、查看信息
 
+git ls-files 命令会返回 Git 仓库中所有的 已跟踪文件（tracked files）。"已跟踪文件"是指那些已经被 Git 管理的文件，包括已经提交到仓库中的文件以及在工作目录中的新文件。
+
 显示有变更的文件
 git status
 
 显示当前分支的版本历史、提交历史
 git log
 
+列出仓库中所有被跟踪的文件。
+git ls-files
+
+列出仓库中所有未被跟踪的文件。这些文件可能包含在 .gitignore 文件中，因此不会被 Git 版本控制系统跟踪。
+git ls-files --others
+
+列出仓库中所有被修改过但还未提交的文件。
+git ls-files --modified
+
+列出仓库中所有被跟踪的文件，以及它们在索引中的状态。
+git ls-files --stage
+
 ## 九、撤销
+
+恢复暂存区的指定文件到工作区:在工作区修改了一个文件,发现修改错了,想撤销修改,就可以用 git restore 把文件恢复到最后一次 commit 的状态:
+git restore [file]
+
+你把文件 add 到了暂存区,后来发现还是不要暂存这个修改,想从暂存区撤销出来（老方法需要两步）
+git restore --staged [file] ----> git checkout [file]
+
+恢复删除的文件,这会从暂存区恢复文件到工作区
+git restore <deleted-file>
+
+恢复暂存区的指定文件到工作区 [还没 add 到暂存区]
+git checkout [file]
 
 恢复某一个时段之前提交的状态到工作区
 git checkout [commitId]
+
+撤销所有未被追踪的目录和文件
+git clean -dn ---> git clean -df
