@@ -4,7 +4,7 @@ Egcoo's personal site
 
 # 常用 Git 命令清单
 
-作者： 阮一峰
+注：原始作者为阮一峰，后在此基础上做修改
 
 几个专有名词的译名
 
@@ -50,10 +50,10 @@ git add .
 ## 四、代码提交
 
 提交暂存区到仓库区
-git commit -m [message]
+git commit -m ["message"]
 
 提交暂存区的指定文件到仓库区
-git commit [file1] [file2] ... -m [message]
+git commit [file1] [file2] ... -m ["message"]
 
 ## 五、分支: 一个分支就是一组独特的代码更改
 
@@ -61,6 +61,13 @@ git commit [file1] [file2] ... -m [message]
 
 1. 在不同分支工作时，不会在另外分支显示，也就不会对另外分支造成影响。
 2. HEAD 指向整个分支中的最新提交
+
+git switch 命令和 git checkout 命令的区别
+
+1. git switch 命令是自 Git 2.23 版本引入的，而 git checkout 命令则是 Git 的早期命令。所以，在使用 Git 的最新版本时，建议使用 git switch 命令。
+2. git switch 命令只用于分支操作，而 git checkout 命令除了可以切换分支外，还可以用于恢复文件。
+3. git switch 命令更加直观，因为它的名称明确地表明了其用途。与此相比，git checkout 命令有时会令人困惑，因为它还有其他用途，例如创建分支或标签。
+4. git switch 命令在切换分支时更加安全。**它会检查当前分支是否被修改并拒绝切换，以避免潜在的代码丢失。**而 git checkout 命令则没有这种检查机制，所以在切换分支时需要特别小心，以免不小心覆盖了未提交的更改。
 
 列出所有本地分支
 git branch
@@ -70,6 +77,9 @@ git branch [branch-name]
 
 新建一个分支，并切换到该分支
 git checkout -b [branch]
+
+切换到指定分支，并更新工作区
+git switch
 
 切换到指定分支，并更新工作区
 git checkout [branch-name]
