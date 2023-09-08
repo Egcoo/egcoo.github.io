@@ -47,6 +47,14 @@ git add [dir]
 添加当前目录的所有文件到暂存区
 git add .
 
+## 四、代码提交
+
+提交暂存区到仓库区
+git commit -m [message]
+
+提交暂存区的指定文件到仓库区
+git commit [file1] [file2] ... -m [message]
+
 ## 五、分支: 一个分支就是一组独特的代码更改
 
 注意的点：
