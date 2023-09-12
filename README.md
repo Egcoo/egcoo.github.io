@@ -85,11 +85,20 @@ $ git commit [file1] [file2] ... -m ["message"]
 # 列出所有本地分支
 $ git branch
 
+# 列出所有远程分支
+$ git branch -r
+
+# 列出所有本地分支和远程分支
+$ git branch -a
+
 # 新建一个分支，但依然停留在当前分支
 $ git branch [branch-name]
 
 # 新建一个分支，并切换到该分支
 $ git checkout -b [branch]
+
+# 重命名当前分支
+$ git branch -M [rename]
 
 # 切换到指定分支，并更新工作区
 $ git switch
@@ -203,6 +212,9 @@ git ls-files 命令会返回 Git 仓库中所有的 已跟踪文件（tracked fi
 ---
 
 ```shell
+# 增加一个新的远程仓库，并命名
+$ git remote add [shortname] [url]
+
 # 上传本地指定分支到远程仓库
 $ git push [remote] [branch]
 
