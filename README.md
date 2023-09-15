@@ -12,6 +12,10 @@ Egcoo's personal site
 > - Index / Stage：暂存区
 > - Repository：仓库区（或本地仓库）
 > - Remote：远程仓库
+> - Local Branch：本地分支
+> - Remote Branch：远程分支
+> - Local Tracking branch：本地追踪分支
+> - Remote Tracking branch：远程追踪分支
 
 ## 一、新建代码库
 
@@ -100,6 +104,9 @@ $ git checkout -b [branch]
 # 重命名当前分支
 $ git branch -M [rename]
 
+# 新建一个分支，与指定的远程分支建立追踪关系,之后就可以直接使用 git push/pull 来提交或者拉取更新
+$ git branch --track [branch] [remote-branch]
+
 # 切换到指定分支，并更新工作区
 $ git switch
 
@@ -126,6 +133,10 @@ $ git cherry-pick [commit]
 
 # 删除分支 (-d 只有该分支被合并以后才可以删除；-D 无论是否合并，强制删除)
 $ git branch -d [branch-name]
+
+# 同步删除远程分支
+$ git push origin --delete branchName
+
 ```
 
 注：
@@ -212,11 +223,23 @@ git ls-files 命令会返回 Git 仓库中所有的 已跟踪文件（tracked fi
 ---
 
 ```shell
+# 显示当前的远程服务器
+$ git remote
+
+# 显示当前的远程分支信息
+$ git remote show origin
+
 # 增加一个新的远程仓库，并命名
 $ git remote add [shortname] [url]
 
+# 取回远程仓库的变化，并与本地分支合并
+$ git pull [remote] [branch]
+
 # 上传本地指定分支到远程仓库
 $ git push [remote] [branch]
+
+# 在远程仓库没有该本地分支的时候，上传本地指定分支到远程仓库,并且创建一个本地跟踪分支
+$ git push -u [remote] [branch]
 
 # 强行推送当前分支到远程仓库，即使有冲突
 $ git push [remote] --force
@@ -297,6 +320,12 @@ _.文件类型 （如 _.log）
 
 忽略某个的文件夹
 [filename]/
+
+## Understanding GitHub Accounts & Repository Types
+
+## Collaborating in GitHub & ccontributing to Open Source Projects
+
+## Creating your GitHub Portfolio Page & More Features to Explore
 
 # 开源项目指南
 
