@@ -1,0 +1,61 @@
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+375 - 448px:     Phone portrait
+667 - 760px:     Phone horizontal
+768 - 1024px:    tablet portrait
+1024 - 1300px:   tablet landscape
+1300px - 1366px:  small desktop to apply
+1366px + :      Big desktop
+
+ORDER:Base + typography > general layout + grid > page layout >components
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == bp-phone-port {
+    @media only screen and (max-width: 27em) {
+      //448px
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-phone-hori {
+    @media only screen and (max-width: 47.5em) {
+      //760px
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-small {
+    @media only screen and (max-width: 48em) {
+      //768px
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-medium {
+    @media only screen and (max-width: 64em) {
+      //1024px
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-large {
+    @media only screen and (max-width: 81.25em) {
+      //1300px
+      @content;
+    }
+  }
+
+  @if $breakpoint == bp-largest {
+    @media only screen and (max-width: 85.375em) {
+      //1366px
+      @content;
+    }
+  }
+}

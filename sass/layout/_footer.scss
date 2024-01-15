@@ -1,0 +1,101 @@
+.footer {
+  padding: 8rem 7rem 5rem 7rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    'logo logo'
+    'plugins plugins'
+    'declaration declaration';
+
+  @include respond(bp-phone-port) {
+    padding: 7rem 5rem 3rem 4rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'logo'
+      'plugins'
+      'declaration';
+  }
+
+  &__logo {
+    grid-area: logo;
+    text-decoration: none;
+    margin-bottom: 4rem;
+
+    &-text {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--color-footer-logo-text);
+    }
+    @include respond(bp-phone-hori) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__social-plugins {
+    grid-area: plugins;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
+
+  &__text {
+    grid-area: declaration;
+    color: var(--color-footer-declaration);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  &__quote {
+    height: 25vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(#1d1d1f, 0.5),
+        rgba(#000, 0.7)
+      ),
+      url(../img/theGulfStream.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    position: relative;
+
+    @include respond(bp-medium) {
+      height: 20vh;
+    }
+
+    @include respond(bp-phone-hori) {
+      height: 30vh;
+    }
+
+    @include respond(bp-phone-hori) {
+      height: 20vh;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--color-white);
+    }
+
+    &-text {
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+
+      @include respond(bp-phone-port) {
+        padding: 0 10vw;
+      }
+    }
+  }
+}
+
+.plugin-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}

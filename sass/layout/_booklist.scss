@@ -1,0 +1,35 @@
+%heading-book {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.booklist {
+  max-width: 130rem;
+  margin: 0 auto;
+  background-color: var(--color-black);
+
+  &__heading-1 {
+    @extend %heading-book;
+    font-size: 4.5rem;
+    line-height: 1;
+    margin: 3rem 0;
+  }
+
+  &__heading-2 {
+    @extend %heading-book;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 1.5rem 0;
+  }
+
+  &__list {
+    list-style: none;
+    margin-left: 3rem;
+  }
+
+  &__item {
+    margin-bottom: 0.5rem;
+    color: var(--color-white);
+  }
+}

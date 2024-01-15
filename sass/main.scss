@@ -1,23 +1,15 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import "base/base";
-@import "base/animations";
-@import "base/typography";
-@import "base/utilities";
+@import 'base/base';
+@import 'base/typography';
 
-@import "components/button";
-@import "components/card";
-@import "components/componsition";
-@import "components/feature-box";
-@import "components/form";
-@import "components/popup";
-@import "components/story";
+@import 'components/sidebar';
+@import 'components/navigation';
 
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/navigation";
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+@import 'layout/booklist';
 
-@import "pages/home";
+@import 'pages/home';

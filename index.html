@@ -4,8 +4,1400 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Egcoo's Resources</title>
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="module" defer src="javascript/script.js"></script>
+    <title>轻度失效&nbsp;Normal Invalidation</title>
   </head>
-  <body></body>
+  <body class="container">
+    <div class="navbar">
+      <nav class="nav">
+        <a href="/" class="nav__quote"
+          ><span class="nav__quote-text"
+            >Stay Strong,&nbsp;Stay in Touch</span
+          ></a
+        >
+        <div class="nav__relative">
+          <ul class="nav__items-list">
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                target="_blank"
+                href="https://mp.weixin.qq.com/s?__biz=Mzg2NjY3MTI3OQ==&mid=2247484466&idx=1&sn=045cc45ba04fb72036e129085102f031&chksm=ce460bf2f93182e41df42f4f7e15c43fff359b05673393a1d7b08876d7239e25620a14ced968&token=802624503&lang=zh_CN#rd"
+                >内容推荐</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                class="nav__link"
+                target="_blank"
+                href="https://mp.weixin.qq.com/s/Y_MrOMPDert7ykcg62WHlQ"
+                >思考片段</a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" target="_blank" href="booklist.html">书单</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#footer"
+                ><div class="nav__contact btn">👋 Say Hello</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__action">
+          <div class="nav__theme-toggle nav__theme--sun">
+            <svg class="nav__theme--active">
+              <use xlink:href="img/svg/sprite.svg#icon-sun"></use>
+            </svg>
+          </div>
+          <div class="nav__theme-toggle nav__theme--moon hidden">
+            <svg>
+              <use xlink:href="img/svg/sprite.svg#icon-moon"></use>
+            </svg>
+          </div>
+          <div class="nav__search">
+            <svg>
+              <use xlink:href="img/svg/sprite.svg#icon-search"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="nav__mobile">
+          <div class="nav__mobile--menu">
+            <svg>
+              <use xlink:href="img/svg/sprite.svg#icon-menu"></use>
+            </svg>
+          </div>
+          <div class="nav__mobile--close hidden">
+            <svg>
+              <use xlink:href="img/svg/sprite.svg#icon-x"></use>
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          The destination is not the reward, the journey is the reward.
+        </h1>
+      </div>
+    </header>
+    <main class="main">
+      <nav class="section-nav">
+        <ul>
+          <li>
+            <a href="#contact">
+              <svg class="section-nav__icon">
+                <use xlink:href="img/svg/sprite.svg#icon-inbox"></use>
+              </svg>
+              Social Media</a
+            >
+          </li>
+          <li>
+            <a href="#media">
+              <svg class="section-nav__icon">
+                <use xlink:href="img/svg/sprite.svg#icon-tv"></use>
+              </svg>
+              Streaming Media</a
+            >
+          </li>
+          <li>
+            <a href="#news">
+              <svg class="section-nav__icon">
+                <use xlink:href="img/svg/sprite.svg#icon-link"></use>
+              </svg>
+              News</a
+            >
+          </li>
+          <li>
+            <a href="#blog">
+              <svg class="section-nav__icon">
+                <use xlink:href="img/svg/sprite.svg#icon-edit"></use>
+              </svg>
+              Blog</a
+            >
+          </li>
+          <li>
+            <a href="#ai">
+              <svg class="section-nav__icon">
+                <use xlink:href="img/svg/sprite.svg#icon-target"></use>
+              </svg>
+              AI</a
+            >
+          </li>
+          <li>
+            <a href="#writing">
+              <svg class="section-nav__icon">
+                <use xlink:href="img/svg/sprite.svg#icon-pen-tool"></use>
+              </svg>
+              Writing</a
+            >
+          </li>
+          <li>
+            <a href="#programming">
+              <svg class="section-nav__icon">
+                <use xlink:href="img/svg/sprite.svg#icon-code"></use>
+              </svg>
+              Programming</a
+            >
+          </li>
+          <li>
+            <a href="#tools">
+              <svg class="section-nav__icon">
+                <use xlink:href="img/svg/sprite.svg#icon-tool"></use>
+              </svg>
+              Tool</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="section section-contact" id="contact">
+        <div class="section-intro">
+          <h2 class="heading-secondary">Email &amp; Social Media</h2>
+        </div>
+        <div class="grid section__links section__links--contact">
+          <ul class="link-list">
+            <li class="link-list__item">
+              <a
+                href="https://mail.google.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Gmail</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://outlook.live.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Outlook</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://mail.163.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >163 Mail</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://mail.qq.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >QQ Mail</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://github.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Github</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://web.okjike.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Jike</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://weibo.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Weibo</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://web.telegram.org/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Telegram</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://instagram.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://discord.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Discord</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://twitter.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://wx.zsxq.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >ZSXQ</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.douban.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Douban</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section section-media" id="media">
+        <div class="section-intro">
+          <h2 class="heading-secondary">Streaming Media</h2>
+        </div>
+        <div class="grid section__links section__links--media">
+          <ul class="link-list">
+            <li class="link-list__item">
+              <a
+                href="https://youtube.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >YouTube</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.bilibili.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Bilibili</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.chess.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Chess</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.inoreader.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Inoreader</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://sspai.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >少数派</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://v2ex.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >V2EX</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://open.spotify.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Spotify</a
+              >
+            </li>
+
+            <li class="link-list__item">
+              <a
+                href="https://soundcloud.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Soundcloud</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.justmi.cn/v2/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >抓饭直播</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.hdmoli.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >HDmoli</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.freeok.vip/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >FreeOK</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://cupfox.app/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Cupfox</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://podcasts.google.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Google Podcast</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://artsandculture.google.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Google Art</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://myxiaozhan.net/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >阿里小站</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section section-news" id="news">
+        <div class="section-intro">
+          <h2 class="heading-secondary">News &amp; Mag</h2>
+        </div>
+        <div class="grid section__links section__links--news">
+          <ul class="link-list">
+            <li class="link-list__item">
+              <a
+                href="http://readland.cn/2022"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >阅览室</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.wsj.com/?mod=wsjheader_logo"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >WSJ</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://cn.wsj.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >WSJ-zh</a
+              >
+            </li>
+
+            <li class="link-list__item">
+              <a
+                href="https://www.newyorker.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >The New Yorker</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.ft.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Financial Times</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.economist.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >The Economist</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.nytimes.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >The NY Times</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://web3caff.com/zh/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >WebCaff</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.thetype.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >The Type</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://weread.qq.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Weread</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://app.flowoss.com/zh-CN"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Epub reader</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section section-blog" id="blog">
+        <div class="section-intro">
+          <h2 class="heading-secondary">Blog</h2>
+        </div>
+        <div class="grid section__links section__links--blog">
+          <ul class="link-list">
+            <li class="link-list__item">
+              <a
+                href="https://pmthinking.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >产品沉思录</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://xiaobot.net/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >小报童</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://ouranswers.notion.site/cc4a6b2ab07f42dc9f636b12bca389f7?v=d3db55b11eb94c3f833815da9d6bed02"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >参考答案</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.ruanyifeng.com/blog/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >科技爱好者周刊</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.paulgraham.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Paul Graham</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://chuan.us/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >硅谷王川</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://rili.zxy.wiki/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >VicodinXYZ</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://witty-drum-f44.notion.site/2022-2023-9f2a990edf3243c1a85422b56c854a04"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >中二怪</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.hecaitou.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >槽边往事</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://stephenleng.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >心的道理</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://steve.hedwig.pub/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Steve每周通讯</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://survivesjtu.gitbook.io/survivesjtumanual/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >SurviveSJTU</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section section-ai" id="ai">
+        <div class="section-intro">
+          <h2 class="heading-secondary">AI</h2>
+        </div>
+        <div class="grid section__links section__links--ai">
+          <ul class="link-list">
+            <li class="link-list__item">
+              <a
+                href="https://chat.openai.com/chat"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >ChatGPT</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://platform.openai.com/overview"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >OpenAI</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://claude.ai/chats"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Claude</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://poe.com/chatgpt"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Poe</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://kimi.moonshot.cn/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >KimiChat</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://heypi.com/talk?scr"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Pi</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://aibang.run/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >AI 帮个忙</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.midjourney.com/app/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Midjourney</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://newzone.top/chatgpt/?continueFlag=162e74a063e1618c4b9ff660ba4f77b0&tags=article"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >AI Short</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://gpt.candobear.com/prompt"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >GPT Prompt</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://learningprompt.wiki/zh-Hans/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Learning Prompt</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://gamma.app/signup"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Gamma</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://podcast.adobe.com/enhance"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Adobe AI</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.essay.art/ielts"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >IELTS AI</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section section-writing" id="writing">
+        <div class="section-intro">
+          <h2 class="heading-secondary">Writing</h2>
+        </div>
+        <div class="grid section__links section__links--writing">
+          <ul class="link-list">
+            <li class="link-list__item">
+              <a
+                href="https://www.okr.com/practice/key-result"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >OKR</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.notion.so"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Notion</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://obsidian.md/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Obsidian</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://help.flomoapp.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Flomo 101</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://markdown.com.cn/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >markdown</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://typora.io/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Typora</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://mp.weixin.qq.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >公众号</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://puffy-metatarsal-eb5.notion.site/Notion-957a4c7ba6254e6d8a1f1a52e0582974"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Notion模板</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section section-programming" id="programming">
+        <div class="section-intro">
+          <h2 class="heading-secondary">Programming &amp; Design</h2>
+        </div>
+        <div class="grid section__links section__links--program">
+          <ul class="link-list">
+            <li class="link-list__item">
+              <a
+                href="https://codingheroes.io/resources/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Jonas'Resources</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://linear.app/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Linear</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://app.netlify.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Netlify</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://leetcode.cn/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Leetcode</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://codepen.io/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >CodePen</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://online.swiftplayground.run/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >SwiftPlayground</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://academind.com/courses"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Academind</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.freecodecamp.org/chinese/news"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >FreeCodeCamp</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.canva.cn/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Canva</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://lanhuapp.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >蓝湖</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1265624861301166528"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Figma</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://fonts.google.com/?preview.size=25"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >GoogleFonts</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://hao.uisdc.com/font/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >优设字体</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://iconlibrary.framer.website/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >iconLibrary</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://yesicon.app/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >yesicon</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://iconbuddy.app/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >iconBuddy</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.flaticon.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Flaticon</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://cssdesignawards.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >CSSDesignAwards</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://land-book.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Land-book</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://onepagelove.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >One Page Love</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.awwwards.com/websites/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >WinningWebsites</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://dribbble.com/shots"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Dribble</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section section-tools" id="tools">
+        <div class="section-intro">
+          <h2 class="heading-secondary">Tools</h2>
+        </div>
+        <div class="grid section__links section__links--tools">
+          <ul class="link-list">
+            <li class="link-list__item">
+              <a
+                href="http://caiyunapp.com/h5/?lonlat=116.231204,40.22066?lonlat=116.231204,40.22066"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >彩云天气</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.12306.cn/index/index.html"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >12306</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://drive.google.com/drive/my-drive"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Google Drive</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.aliyundrive.com/drive/file/backup"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >AliDrive</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://pan.baidu.com/disk/main?from=homeFlow#/index?category=all"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Baidu Drive</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://cloud.tencent.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >腾讯云</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.jianguoyun.com/#/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >坚果云</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.binance.com/zh-CN"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Binance</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.okx.com/cn"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >OKX</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://opensea.io/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >OpenSea</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.nasdaq.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Nasdaq</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://docs.rsshub.app/zh/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >RSSHub</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.spotlistr.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Spotlistr</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://kill-the-newsletter.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Kill Newsletter</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://web.baimiaoapp.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >白描 OCR</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://compressor.io/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Compressor</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://dezoomify.ophir.dev/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Squoosh</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://imagestool.com/zh_CN/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Imagestool</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://snapsave.io/zh-cn20"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >SnapSave</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://smallpdf.com/word-to-pdf"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >WordToPdf</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://convertio.co/zh/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Convertio</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.aconvert.com/cn/icon/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >Aconvert</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://www.skylinewebcams.com/zh/webcam/italia/lazio/roma/roma-colosseo.html"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >SkylineWebcams</a
+              >
+            </li>
+            <li class="link-list__item">
+              <a
+                href="https://subslikescript.com/"
+                class="link-list__link"
+                target="_blank"
+                rel="noreferrer"
+                >subslikescript</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <div class="sidebar">
+      <div class="sidebar__reward">
+        <svg class="sidebar__reward-icon">
+          <use xlink:href="img/svg/sprite.svg#icon-heart"></use>
+        </svg>
+        <div class="sidebar__menu">
+          <img src="img/reward.png" alt="Buy me a coffee" />
+        </div>
+        <div class="helper-class">
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#icon-controller-play"></use>
+          </svg>
+        </div>
+      </div>
+      <button class="sidebar__back-top">
+        <svg>
+          <use xlink:href="img/svg/sprite.svg#icon-arrow-up"></use>
+        </svg>
+      </button>
+    </div>
+    <footer id="footer">
+      <div class="footer">
+        <a href="/" class="footer__logo"
+          ><span class="footer__logo-text"
+            >轻度失效&nbsp;&nbsp;Normal&nbsp;Invalidation&nbsp;&copy;2021&nbsp;-&nbsp2023;
+          </span></a
+        >
+        <div class="footer__social-plugins">
+          <ul>
+            <li>
+              <a
+                href="https://github.com/Egcoo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg class="plugin-icon">
+                  <use
+                    xlink:href="img/svg/social-plugins.svg#icon-github"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:fsjmissyou@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <svg class="plugin-icon">
+                  <use xlink:href="img/svg/social-plugins.svg#icon-gmail"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/egcoo" target="_blank" rel="noreferrer">
+                <svg class="plugin-icon">
+                  <use
+                    xlink:href="img/svg/social-plugins.svg#icon-telegram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="wechat:fsjmissyou808" target="_blank" rel="noreferrer">
+                <svg class="plugin-icon">
+                  <use
+                    xlink:href="img/svg/social-plugins.svg#icon-wechat"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__text">
+          <p class="footer__declaration">
+            All Rights Reserved.No responsibility for the content of linked
+            third-party websites.
+          </p>
+        </div>
+      </div>
+      <div class="footer__quote">
+        <a
+          href="https://www.bilibili.com/video/BV1oW411h7Ea/?spm_id_from=333.337.search-card.all.click&vd_source=2e2575b6a8fc21f8338f4518fecf57a2"
+        >
+          <p class="heading-quote footer__quote-text">
+            A ship in harbor is safe,&nbsp;but that is not what ships are built
+            for.
+          </p>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
