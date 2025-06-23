@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @include respond(bp-largest) {
+    font-size: 56.25%;
+  }
+
+  @include respond(bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-base);
+}
+
+body::-webkit-scrollbar {
+  background-color: var(--scrollbar-background-color);
+  width: 1.5rem; //y轴滚动条宽度
+  height: 1.5rem; //x轴滚动条高度
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color); //滚动条的背景颜色
+  border: 3px solid transparent;
+  border-radius: 1rem; //滚动条的圆角
+  background-clip: padding-box;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-color);
+  border: 3px solid transparent;
+  border-radius: 1rem; //滚动条的圆角
+  background-clip: padding-box;
+}

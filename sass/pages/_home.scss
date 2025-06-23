@@ -1,0 +1,117 @@
+.section {
+  max-width: 130rem;
+  margin: 0 auto;
+
+  @include respond(bp-large) {
+    max-width: 100rem;
+  }
+
+  @include respond(bp-medium) {
+    max-width: 80rem;
+  }
+
+  @include respond(bp-phone-hori) {
+    max-width: 70rem;
+  }
+
+  @include respond(bp-phone-port) {
+    max-width: 44rem;
+  }
+
+  &-nav {
+    background-color: var(--color-section-nav);
+    padding: 1.6rem 2rem;
+
+    @include respond(bp-medium) {
+      padding: 1.6rem 2rem 0.6rem 2rem;
+    }
+  }
+
+  &-intro {
+    padding: var(--section-intro-padding-top) var(--tile-padding-right)
+      var(--section-intro-padding-bottom) var(--tile-padding-right);
+
+    @include respond(bp-medium) {
+      padding: 4rem var(--tile-padding-right) 2rem var(--tile-padding-right);
+    }
+  }
+
+  &__links {
+    background-color: var(--color-section-item);
+    border-radius: var(--tile-border-radius);
+    padding: var(--grid-gutter);
+
+    @include respond(bp-medium) {
+      border-radius: 2.2rem;
+    }
+
+    @include respond(bp-phone-port) {
+      border-radius: 2rem;
+      padding: 1.5rem;
+    }
+
+    &--contact {
+      box-shadow: var(--tile-card-shadow);
+    }
+
+    &--media {
+      box-shadow: rgba(61, 68, 195, 0.15) 0px 4px 8px -2px;
+    }
+
+    &--news {
+      box-shadow: rgba(255, 62, 23, 0.15) 0px 4px 8px -2px;
+    }
+
+    &--blog {
+      box-shadow: rgba(12, 157, 70, 0.15) 0px 4px 8px -2px;
+    }
+
+    &--ai {
+      box-shadow: rgba(231, 30, 230, 0.15) 0px 4px 8px -2px;
+    }
+
+    &--writing {
+      box-shadow: rgba(251, 77, 102, 0.15) 0px 4px 8px -2px;
+    }
+
+    &--program {
+      box-shadow: rgba(14, 157, 220, 0.15) 0px 4px 8px -2px;
+    }
+
+    &--tools {
+      box-shadow: rgba(228, 78, 0, 0.15) 0px 4px 8px -2px;
+    }
+  }
+
+  &-contact {
+    color: var(--color-azure);
+  }
+
+  &-media {
+    color: var(--color-sapphire);
+  }
+
+  &-news {
+    color: var(--color-tangelo);
+  }
+
+  &-blog {
+    color: var(--color-green);
+  }
+
+  &-ai {
+    color: var(--color-azalea);
+  }
+
+  &-writing {
+    color: var(--color-guava);
+  }
+
+  &-programming {
+    color: var(--color-denim);
+  }
+
+  &-tools {
+    color: var(--color-orange);
+  }
+}

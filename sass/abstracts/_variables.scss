@@ -1,0 +1,143 @@
+:root {
+  //COLOR VARIABLES
+  --color-indigo: #622aff;
+  --color-violet: #8876fe;
+  --color-grape: #6e21e6;
+  --color-plum: #8d1287;
+  --color-azalea: #e71ee6;
+  --color-magenta: #dd04d1;
+  --color-tomato: #f63e54;
+  --color-guava: #fb4d66;
+  --color-tangelo: #ff3e17;
+  --color-coral: #f95c30;
+  --color-persimmon: #e94b1b;
+  --color-pumpkin: #e2620c;
+  --color-orange: #e66702;
+  --color-verdant: #29d246;
+  --color-bright-green: #00d436;
+  --color-new-green: #13be54;
+  --color-avocado: #73b439;
+  --color-green: #0c9d46;
+  --color-blue-green: #26c2ac;
+  --color-peacock-green: #14b1a1;
+  --color-sea-green: #099b9d;
+  --color-teal-green: #2b9ca1;
+  --color-aqua: #039e8f;
+  --color-teal: #049cb7;
+  --color-pool-blue: #00c2ee;
+  --color-azure: #027fff;
+  --color-sparkle-blue: #007aff;
+  --color-denim: #0056d2;
+  --color-cobalt: #5451fb;
+  --color-sapphire: #3d44c3;
+  --color-night: #23466c;
+  --color-ultramarine: #0d1387;
+  --color-clay: #500000;
+  --color-base: #f5f5f7;
+
+  --color-white: #ffffff;
+  --color-black: #1d1d1f;
+  --color-grey-1: #fafafa;
+  --color-grey-2: #f5f5f7;
+  --color-grey-3: #efefef;
+  --color-grey-4: #e9e9eb;
+
+  --color-quote: var(--color-black);
+  --color-heading: var(--color-white);
+  --color-nav-link: #73716d;
+  --color-nav-hover: var(--color-black);
+
+  --color-btn-font: #e6e6e6;
+  --color-btn-origin: #101d2c;
+  --color-btn-hover: #283441;
+
+  --color-section-nav: var(--color-white);
+  --color-section-nav-el: var(--color-grey-4);
+  --color-section-nav-el-hover: #4ea5ff;
+  --color-section-nav-el-font: #38464d;
+  --color-section-nav-el-font-hover: var(--color-white);
+
+  --color-section-item: var(--color-white);
+  --color-section-links-item-font: #200000;
+  --color-section-links-item-font-hover: var(--color-clay);
+  --color-section-links-item-border: var(--color-grey-4);
+  --color-section-links-item-border-hover: var(--color-azure);
+  --color-section-links-item-bg-hover: var(--color-grey-1);
+
+  --color-sidebar-icon: #515767;
+  --color-sidebar-icon-bg: var(--color-white);
+  --color-sidebar-icon-hover: var(--color-black);
+  --sidebar-shadow: 0 2px 8px rgba(50, 50, 50, 0.04);
+  --sidebar-shadow-hover: 0 2px 8px rgba(50, 50, 50, 0.08);
+  --sidebar-shadow-menu: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+
+  --color-footer-logo-text: var(--color-black);
+  --color-footer-declaration: #000;
+
+  --scrollbar-background-color: #fafafa;
+  --scrollbar-thumb-color: #c1c1c1;
+  --scrollbar-thumb-hover-color: #c1c1c1;
+  --scrollbar-border-color: #e8e8e8;
+
+  //FONT VARIABLES
+  --primary-font: 'Lato', 'Roboto', Helvetica, Arial, sans-serif;
+
+  //UTILTIES VARIABLES
+  --section-intro-padding-top: 5.5rem;
+  --section-intro-padding-bottom: 3rem;
+  --tile-padding-top: 3.6rem;
+  --tile-padding-bottom: 4rem;
+  --tile-padding-left: 4rem;
+  --tile-padding-right: 4rem;
+  --tile-border-radius: 3rem;
+  --tile-card-shadow: rgba(2, 172, 255, 0.15) 0px 4px 8px -2px;
+  --grid-gutter: 2.5rem;
+}
+
+.dark-mode {
+  --color-azure: #1b98ff;
+  --color-sapphire: #507fc9;
+  --color-tanglo: #ff4d2a;
+  --color-green: #62f39c;
+  --color-azalea: #e933e8;
+  --color-guava: #fb5169;
+  --color-denim: #4eaaff;
+  --color-orange: #fd882b;
+  --color-base: #1d2021;
+
+  --color-quote: #e8e6e3;
+  --color-heading: #e8e6e3;
+  --color-nav-link: #a1998d;
+  --color-nav-hover: #d5d1cc;
+
+  --color-btn-font: #d8d5d0;
+  --color-btn-origin: #0d1723;
+  --color-btn-hover: #202a34;
+
+  --color-section-nav: #17191a;
+  --color-section-nav-el: #242728;
+  --color-section-nav-el-hover: #004d9d;
+  --color-section-nav-el-font: #beb8b0;
+  --color-section-nav-el-font-hover: #e8e6e3;
+
+  --color-section-item: #181a1b;
+  --color-section-links-item-font: #dedbd7;
+  --color-section-links-item-font-hover: #cfcbc4;
+  --color-section-links-item-border: #363a3d;
+  --color-section-links-item-border-hover: var(--color-white);
+  --color-section-links-item-bg-hover: #1b1d1e;
+
+  --color-sidebar-icon: #d5d1cc;
+  --color-sidebar-icon-bg: #181a1b;
+  --color-sidebar-icon-hover: var(--color-white);
+  --sidebar-shadow: 0 2px 8px rgba(154, 153, 153, 0.04);
+  --sidebar-shadow-hover: 0 2px 8px rgba(228, 224, 224, 0.15);
+  --sidebar-shadow-menu: 0 2px 8px 0 rgba(255, 255, 255, 0.2);
+
+  --color-footer-logo-text: #d5d1cc;
+  --color-footer-declaration: #e8e6e3;
+
+  --scrollbar-background-color: #1b1d1e;
+  --scrollbar-thumb-color: #686868;
+  --scrollbar-thumb-hover-color: #7b7b7b;
+}

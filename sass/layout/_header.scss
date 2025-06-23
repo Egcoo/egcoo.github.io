@@ -1,0 +1,48 @@
+.header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(#1d1d1f, 0.4),
+      rgba(#000, 0.6)
+    ),
+    url(../img/interstellar.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  position: relative;
+
+  @include respond(bp-medium) {
+    height: 28vh;
+  }
+
+  @include respond(bp-phone-hori) {
+    height: 35vh;
+  }
+
+  @include respond(bp-phone-port) {
+    height: 25vh;
+  }
+
+  &__text-box {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+
+    @include respond(bp-medium) {
+      top: 50%;
+      padding: 0 10vw;
+    }
+
+    @include respond(bp-phone-hori) {
+      display: none;
+    }
+
+    @include respond(bp-phone-port) {
+      display: none;
+    }
+  }
+}
